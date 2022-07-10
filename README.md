@@ -1,3 +1,2 @@
-# git_test
-GitHub Odin
-Hello World!d
+# Odin Projects
+All Projects here were made in accordence with odin project's learnin course
