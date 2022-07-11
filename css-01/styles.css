@@ -1,7 +1,19 @@
-div {
-    background: red;
-    color: white;
-    font-size: 32px;
-    text-align: center;
+#odd {
+    background-color: #cf4b4b;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.second {
+    color: #5151ce;
+    font-size: 36px;
+}
+
+#odd.third {
+    font-size: 24px;
+}
+
+.fourth {
+    background-color: #5dbe56;
     font-weight: bold;
+    font-size: 24px;
 }
