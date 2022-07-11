@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaining Selectors</title>
+    <title>Descendant Combinator</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Use the classes BELOW this line -->
-    <div>
-      <img class="avatar proportioned" src="./pexels-katho-mutodo-8434791.jpg" alt="">
-      <img class="avatar distorted" src="./pexels-andrea-piacquadio-3777931.jpg" alt="">
+    <div class="container">
+      <p class="text">This should be styled.</p>
     </div>
-    <!-- Use the classes ABOVE this line -->
-    <div>
-      <img class="original proportioned" src="./pexels-katho-mutodo-8434791.jpg" alt="">
-      <img class="original distorted" src="./pexels-andrea-piacquadio-3777931.jpg" alt="">
+    <p class="text">This should be unstyled.</p>
+    <p class="text">This should be unstyled.</p>
+    <div class="container">
+      <p class="text">This should be styled.</p>
+      <p class="text">This should be styled.</p>
     </div>
   </body>
 </html>
