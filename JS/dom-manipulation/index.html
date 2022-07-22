@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> dom manipulation </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>
+            THE TITLE OF YOUR WEBPAGE
+          </h1>
+          <div id="container">
+              <div class="content">
+              This is the glorious text-content!
+            </div>
+          </div>
+          <script type="text/javascript">
+                let container = document.querySelector("#container");
+                
+                let header3 = document.createElement("h3");
+                let para = document.createElement("p");
+                let div = document.createElement("div");
+
+                let header1 = document.createElement("h1");
+                let para2 = document.createElement("p");
+                
+                header3.style.color = "blue";
+                header3.innerText = "I'm a blue h3!";
+
+                para.innerText = "Hey I'm red!";
+                para.style.color = "red";
+
+                div.style.borderColor = "black";
+                div.style.backgroundColor = "pink";
+
+                header1.innerText = "I'm in a div";
+                para2.innerText = "ME TOO!"
+                
+                div.appendChild(header1);
+                div.appendChild(para2);
+
+                container.appendChild(para);
+                container.appendChild(header3);
+                container.appendChild(div);
+
+          </script>
+    </body>
+</html>
