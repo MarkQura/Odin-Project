@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 50px;
+    background: linear-gradient(rgb(45, 163, 231), rgb(120, 183, 223));
+}
+
+html {
+    height: 100%;
+}
+
+button,
+.card {
+    font-size: 20px;
+    border: 2px solid transparent;
+    background: none;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    border: none;
+    transform: scale(1.1);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+button.yes:hover {
+    color: rgb(9, 128, 9);
+}
+
+button.no:hover {
+    color: red;
+}
+
+hr.solid {
+    font-size: 20px;
+    border: 1px solid black;
+    height: 100px;
+}
+
+img {
+    height: auto;
+    width: 100px;
+}
+
+img.scissors {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cards  {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 130px;
+    height: 160px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    background: linear-gradient(rgb(233, 125, 53), rgb(219, 149, 103));
+}
+
+.cards .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
+}
+
+.card.selected {
+    transform: scale(1.1);
+}
+
+.center-game-container {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+}
+
+.center-game-container .left {
+    justify-content: center;
+    align-items: center;
+}
+
+.center-game-container .right {
+    justify-content: center;
+}
+
+.center-game-container .right .card {
+    margin-left: 23px;
+}
+
+.center-game-container .left,
+.center-game-container .right {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 450px;
+    margin: 10px 50px;
+}
+
+.center-game-container .middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-game-container .middle button {
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.down-game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.up-game-container{
+    font-size: 30px;
+    text-align: center;
+}
+
+.up-game-container p ,
+.up-game-container div{
+    font-size: 20px;
+}
+
+.up-game-container .points{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.center-container .up {
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.center-container .down {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}

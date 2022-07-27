@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Rock Paper Scissors</title>
+        <meta name="descrition" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="up-game-container">
+            You are playing a match
+            <div class="points">
+                <div class="player"> You: $</div>
+                <div class="computer"> Me: $</div>
+            </div>
+        </div>
+        <div class="center-game-container">
+            <div class="left">
+                <div class="up">
+                    Make your choice
+                </div>
+                <div class="cards">
+                    <button class="card">
+                        <img src="images/rock.png"/>
+                        Rock
+                    </button>
+                    <button class="card">
+                        <img src="images/paper.png"/>
+                        Paper
+                    </button>
+                    <button class="card">
+                        <img class="scissors" src="images/scissors.png"/>
+                        Scissors
+                    </button>
+                </div>
+            </div>
+            <div class="middle">
+                <hr class="solid">
+                <button>
+                    VS
+                </button>
+                <hr class="solid">
+            </div>
+            <div class="right">
+                Oponent's choice
+                <div class="card">
+
+                </div>
+            </div>
+        </div>
+        <div class="down-game-container">
+            <div class="result"> result </div>
+            <button class="back"> Back </button>
+        </div>
+        <script type="module" src="script-game.js" async defer></script>
+    </body>
+</html>
