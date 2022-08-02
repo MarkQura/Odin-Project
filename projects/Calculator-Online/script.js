@@ -69,10 +69,10 @@ function solve() {
     upScreen.innerText = `${number2.number} ${number2.operator} ${number1.number} = `;
 
     switch(number2.operator) {
-        case "÷": number1.number = (parseInt(number2.number) / parseInt(number1.number)).toString(); break;
-        case "×": number1.number = (parseInt(number2.number) * parseInt(number1.number)).toString(); break;
-        case "-": number1.number = (parseInt(number2.number) - parseInt(number1.number)).toString(); break;
-        case "+": number1.number = (parseInt(number2.number) + parseInt(number1.number)).toString(); break;
+        case "÷": number1.number = (Math.round((parseFloat(number2.number) / parseFloat(number1.number)) * 1000) / 1000).toString(); break;
+        case "×": number1.number = (Math.round((parseFloat(number2.number) * parseFloat(number1.number)) * 1000) / 1000).toString(); break;
+        case "-": number1.number = (Math.round((parseFloat(number2.number) - parseFloat(number1.number)) * 1000) / 1000).toString(); break;
+        case "+": number1.number = (Math.round((parseFloat(number2.number) + parseFloat(number1.number)) * 1000) / 1000).toString(); break;
     }
 
     number1.operator = "=";
